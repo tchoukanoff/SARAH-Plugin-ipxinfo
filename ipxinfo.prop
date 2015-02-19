@@ -1,0 +1,11 @@
+{
+	"modules" : {
+		"ipxinfo"  : {
+			"description" : "SARAH manage L'IPX800",
+			"version" : "0.1",
+			"Host" : "",
+			"User" : "",
+			"Password" : ""
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleipxinfo" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleipxinfo" scope="public">
+  <example>Quelle est l'etat de la filtration'</example>
+  <tag>out.action=new Object(); </tag>
+  <item>Sarah</item>
+    
+    <one-of>
+      <item>Quelle est l'etat de la filtration
+        <tag>out.action.tag="led0" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="La filtration est x";</tag>
+      </item>
+      <item>Quelle est l'etat du robot de la pscine
+        <tag>out.action.tag="led1" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Le robot de la piscine est x";</tag>
+      </item>
+      <item>Quelle est l'etat du chauffage de la piscine
+        <tag>out.action.tag="led2" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Le choffage e la piscine est x";</tag>
+      </item>
+      <item>Quelle est la position du store de la piscine
+        <tag>out.action.tag="led3" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Le store de la piscine est %";</tag>
+      </item>
+      <item>Quelle est l'etat de l'éclairage de la piscine
+        <tag>out.action.tag="led4" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="L'éclairage de la piscine est x";</tag>
+      </item>
+      <item>Quelle est l'etat de l'éclairage du jardin
+        <tag>out.action.tag="led5" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="L'éclairage du jardin est x";</tag>
+      </item>
+      <item>Quelle est l'etat du spa
+        <tag>out.action.tag="led6" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="le spa est x";</tag>
+      </item>
+      <item>Quelle est l'etat du sona
+        <tag>out.action.tag="led7" ; out.action._attributes.tts ="je me renseigne" ; out.action.ttsAction="Le sona est x";</tag>
+      </item>
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/ipxinfo";</tag>
+  </rule>
+</grammar>
